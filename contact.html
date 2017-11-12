@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->
+
+      <title>Contact me</title>
+
+    <!-- Bootstrapcore-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template go here -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Custom Fonts -->  
+    <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet"> 
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" class="contact-page">
+
+    <!--navbar starts here-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName navbar-brand"><a href="#">Hertz Media</a>
+          </div>
+        </div><!--end navbar header--> 
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="index.html"><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--end navbar collapse-->
+      </div><!--end container fluid-->      
+    </nav><!--end navbar-->
+
+    <!--Contact starts here-->
+    <div class="jumbotron contact-jumbotron">  
+      <div class="container">       
+        <row clas="row" id="contact">
+          <div class="col-lg-4 col-md-5 col-xs-12 col-sm-6">
+            <header>
+              <h1>Contact details</h1>
+            </header>        
+            <p>Janou Treffers</p>
+            <p><span class="glyphicon glyphicon-earphone"></span> +31641015726 </p>
+            <p> Call us now <a href="tel:+31641015726"><span class="glyphicon glyphicon-earphone"></span></a></p>           
+            <p> Send a message <a href="janoutreffers@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a></p>
+            <p> Folluw us on Facebook: <a href="https://www.facebook.com/hertzmediaprodukties/?fref=ts"><span class="glyphicon glyphicon-hand-right"></span></a></p>
+          </div><!--contact column-->
+    
+          <div class="col-lg-8 col-md-7 col-xs-12 col-sm-6" id="contact-column">
+            <h3>Tell us what you're looking for:</h3>
+            <form id="contact">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type ="textBox" minlength=10 id="name" class="form-control" placeholder="*Name" required=”required”>
+              </div><!--end form-group-->
+
+              <div class="form-group">
+                <label for="name">Email Adress</label>
+                <input type=”email” name=”email” id=”email” title=”enter your email” class="form-control" placeholder="*Your email address" required=”required”>
+              </div><!--end form-group-->
+           
+              <div class="form-group">
+                <label for="name">Your message</label>
+                <textarea minlength=20 placeholder="Your message here" class="form-control" class="messagebox" style="resize:none" cols="60" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-success">Submit</button>
+            </form>
+          </div><!--end column -->
+        </div><!--end row-->
+      </div><!--end container-->
+    </div><!--end jumbotron-->
+
+        <!-- footer-->
+      <footer class="footer">
+        <div class="row" id="footer">
+          <div class="copyright col-xs-12 col-md-4">&copy;Hertz Media 2017
+          </div><!--end copyright--> 
+
+          <div id="mytwitter" class="socialmedia col-xs-12 col-md-4">
+            <a href="https://twitter.com/JanouTreffers" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @JanouTreffers</a> 
+          </div><!--end twitter-->
+
+          <div id="myfacebook" class="socialmedia col-xs-12 col-md-4">
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fhertzmediaprodukties%2F&width=167&layout=button&action=recommend&size=large&show_faces=true&share=true&height=65&appId=511153102368492" width="167" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+        </div>   
+      </footer>
+    <!-- ============================= -->
+    <!-- All your JavaScript comes now -->
+    <!-- ============================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Can place script tags with JavaScript files here -->
+    
+    <!--Twitter-->
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+':/platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+
+    <!--smooth scroll-->
+
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+            var href = $.attr(this, 'href');
+            if (href) {
+              $root.animate({
+                scrollTop: $(href).offset().top
+              }, 500, function () {
+                window.location.hash = href;
+              });
+            }
+              return false;
+          });
+    </script>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- ============================= -->
+      
+  </body>
+
+</html>
+        
+

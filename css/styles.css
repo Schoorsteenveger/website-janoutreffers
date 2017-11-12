@@ -1,0 +1,543 @@
+
+/*------------------------------------*\
+  Main
+\*------------------------------------*/
+
+html, body {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "CooperHewitt-Book", "Open Sans", "Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 17px;
+  color: #071317;
+  overflow-x: hidden;
+  background-color: #fefdff;
+}
+
+#index,
+#about,
+#faq,
+#contact,
+#work,
+  { padding-top: 35px;
+    padding-top: -35px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*------------------------------------*\
+ Typography
+\*------------------------------------*/
+
+h1 {
+  font-family: "CooperHewitt-Bold", arial;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  color: #071317;
+}
+
+h2, p { font-family: "CooperHewitt-Book", arial;}
+
+/*------------------------------------*\
+ Navbar
+\*------------------------------------*/
+
+.navbar {
+  position:fixed;
+  display: inline-block;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.navbar li a {
+  font-size: 20px;
+  letter-spacing: .05em;
+  color: #8a8888;
+  padding: 15px 15px 15px 15px;
+  margin: 0 15px 0 10px;
+}
+
+.navbar li a:hover {
+  color: #ffcedd;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse {
+  background-color: #5f9e9f;
+}
+
+.projectName {
+  text-transform: uppercase;
+  padding: 18px;
+  color: #FFF;
+}
+
+.projectName a {
+  color: #000;
+}
+
+#project {
+  padding: 10px 0 25px 0;
+}
+
+/*------------------------------------*\
+ Contact Homepage
+\*------------------------------------*/
+
+#contact-column h3 {
+  font-size: 1.17em;
+  font-weight: 800;
+  text-align: left;
+  padding: 25px 0 15px;
+}
+
+.contact-jumbotron {
+  background-image: url("../img/contact_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  margin-top:30px;
+  font-family: "CooperHewitt-Book", arial;
+  padding-bottom: 35px;
+}
+
+@media screen (min-width: 768px) {
+  .contact-jumbotron {
+    min-height: 490px;
+    background-repeat: no-repeat;
+  }
+}
+
+.contact-jumbotron h1 {
+  text-align: left;
+  float: left;
+}
+
+.contact-jumbotron p {
+  font-size: 18px;
+  color: #FFF;
+}
+
+.btn-succes {
+  color:#c1dff0;
+  background-color: #FFF;
+  border-color: #c1dff0;
+}
+
+/*------------------------------------*\
+ Footer
+\*------------------------------------*/
+
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #5f9e9f;
+}
+
+#mytwitter, #myfacebook, .copyright {
+  font-size: 18px;
+  padding-top: 35px;
+}
+
+/*------------------------------------*\
+ Faq Homepage
+\*------------------------------------*/
+
+#accordion { padding: 0em 0 4em 0;  }
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+ Carousel Homepage
+\*------------------------------------*/
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: brown;
+}
+
+.carousel img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel {margin: 1.7em -15px 15px -15px;}
+
+.carousel-caption h1 {
+  padding: 0 !important;
+  color: #e8c497;
+  font-size: 4.5em;
+  font-family: 'CooperHewitt-Bold', arial;
+}
+
+.carousel-caption {
+  font-size: 0.7em;
+  font-variant-position: center;
+  position: absolute;
+}
+
+/*------------------------------------*\
+Learn more
+\*------------------------------------*/
+
+.jumbotron-learn {
+  background-image: url("../img/andreas-ronningen-31469.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+  padding-top: 45px;
+}
+
+.learn-more {
+  position: relative;
+  color: #deb887;
+  font-size: 5em;
+  text-align: center;
+  float: left;
+  padding-left: 15px;
+  padding-top: 50px;
+}
+
+.modal-button {
+  float: right;
+  padding: 15px;
+  padding-top: 150px;
+}
+
+#modalembed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+/*------------------------------------*\
+ Work section
+\*------------------------------------*/
+#clients {
+  position: relative;
+  display: block;
+}
+
+#clients p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 200;
+  font-size: 2em;
+}
+.image-responsive {
+  display: block;
+  margin: 0 auto;
+}
+
+#work {
+  margin: 0 auto;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+#title {
+  margin: 0 auto;
+}
+/*------------------------------------*\
+ Video Homepage
+\*------------------------------------*/
+.container-video {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*------------------------------------*\
+ Images
+\*------------------------------------*/
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------*\
+ Multi Webpage Contact
+\*------------------------------------*/
+
+body.contact-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height:100%;
+  padding-top: 30px;
+}
+
+.contact-jumbotron h1 {
+  color: #071317;
+  float: left;
+  text-align: left;
+}
+
+#contact-column h3 {
+  text-align: left;
+  font-size: 1.5em;
+  color: #071317;
+}
+
+#contact { color: #FFF; }
+
+.message-box { width: 100%; }
+
+.form-control { width: 100%; }
+
+label { color: #FFF; }
+
+/*------------------------------------*\
+ Multi Webpage About
+\*------------------------------------*/
+
+body.about-page {
+  background-color: #fcf7f7;
+}
+
+#about { margin: 0 auto; }
+
+.column3 h2,
+.column2 h2,
+.column4 p {
+  padding: 0.5em;
+  color: #000;
+}
+
+.column3 li { padding-left: 15px; }
+
+.column4 h3 { text-align: left; }
+
+#skill-list {
+  margin-left: 10px;
+  background-color: #c5d2dd;
+  padding: 10px 30px 10px 30px;
+}
+
+.intro p {
+  font-size: 2em;
+  color: black;
+  font-weight: 200;
+  -webkit-margin-before: 0;
+  padding: 0.5em;
+}
+
+.skills h2 {
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+#logo-hertz {
+  float:left;
+  position: relative;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------*\
+ Main text
+\*------------------------------------*/
+/*------------------------------------*\
+ Intro
+\*------------------------------------*/
+.container-intro {
+  padding: 25px 10px 45px 10px;
+}
+
+#pencil {
+  padding-top: 15px;
+}
+/*------------------------------------*\
+ Multi Webpage F.A.Q
+\*------------------------------------*/
+
+#faq {
+  display: block;
+  text-align: center;
+  padding: 0.7em  0 0.7em 0;
+}
+
+.wrapper {
+  width: 90%;
+  text-align: left;
+}
+
+.panel-group {
+  color: #3b3647;
+  font-size: 18px;
+}
+
+.panel {background-color: #FFF; }
+
+.panel-default>.panel-heading {background-color: #c5d2dd;}
+
+.panel-body { border-top-color: #c5d2dd; }
+
+#headingOne,
+#headingTwo,
+#headingThree,
+#headingFour,
+#headingFive,
+#headingSix {
+  font-size: 20px;
+}
+
+/*------------------------------------*\
+ Multi Webpage WORK
+\*------------------------------------*/
+.work-page {margin-top: 35px;}
+
+section#clients {
+  display: block;
+  position: relative;
+  margin: 0 7px;
+  padding-top: 25px 0 25px 0;
+}
+
+section#clients h1 { padding: 0.4em 0 }
+
+#video-projects {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+h2 {
+  display: inline-block;
+  text-align: :center;
+}
+
+.img-responsive {
+  display: block;
+  padding-top: 20px 0 20px 0;
+ }
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*------------------------------------*\
+ Multi Webpage VIDEO
+\*------------------------------------*/
+
+.video-promo {
+  position: inherit;
+  margin-top: 15px;
+  margin bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+/*------------------------------------*\
+ Google Maps
+\*------------------------------------*/
+.container-map {
+  margin: 0 auto;
+  position: relative;
+  clear:both;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #map {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 400px;
+    }
+}
+.gm-style .gm-style-iw {
+   font-size: 16px;
+   color: #000;
+   font-weight: 300;
+   font-family: sans-serif;
+}
+
+.button-succes, .btn-lg  {
+  background-color: #c1dff0;
+  color: #000;
+  border-color: #c1dff0;
+}
+
+.btn-succes: hover {
+  color: #FFF;
+  background-color: #5f9e9e !important;
+  border-color: #5f9e9e;
+}
+/*------------------------------------*\
+ Work Portfolio
+\*------------------------------------*/
+.work-img {
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  padding: 0;
+}
+
+.info {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  color: #deb887;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3em;
+  line-height: 0 !important;
+  display: none;
+  font-size: 14px;
+}
+
+.proj-title {
+  font-weight:100;
+}
+
+
+
